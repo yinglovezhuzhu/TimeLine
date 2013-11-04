@@ -3,8 +3,6 @@
  */
 package com.ckt.vas.miles.ui.views;
 
-import android.content.Context;
-import android.util.AttributeSet;
 import android.view.animation.TranslateAnimation;
 
 /**

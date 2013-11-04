@@ -19,8 +19,6 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Scroller;
 
-import com.ckt.vas.miles.R;
-
 /**
  * @author Gauss
  *
