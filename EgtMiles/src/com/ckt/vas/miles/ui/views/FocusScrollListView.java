@@ -4,7 +4,7 @@
 package com.ckt.vas.miles.ui.views;
 
 import java.lang.reflect.Method;
-
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -102,7 +102,8 @@ public class FocusScrollListView extends ListView {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);  
     }  
   
-    @Override  
+    @SuppressLint("DrawAllocation")
+	@Override  
     protected void onLayout(boolean changed, int l, int t, int r, int b) {  
         super.onLayout(changed, l, t, r, b);  
         itemWidth = getWidth();  

@@ -19,28 +19,31 @@ public class InOutRelativeLayout extends RelativeLayout {
 		super(paramContext);
 	}
 
-	public InOutRelativeLayout(Context paramContext, AttributeSet paramAttributeSet) {
+	public InOutRelativeLayout(Context paramContext,
+			AttributeSet paramAttributeSet) {
 		super(paramContext, paramAttributeSet);
 	}
 
 	protected void onAnimationEnd() {
 		super.onAnimationEnd();
-//		if (!(this.animation instanceof InOutAnimation))
-//			return;
-//		InOutAnimation.Direction localDirection1 = ((InOutAnimation) this.animation).direction;
-//		InOutAnimation.Direction localDirection2 = InOutAnimation.Direction.OUT;
-//		if (localDirection1 == localDirection2)
-//			;
-//		for (int i = 8;; i = 0) {
-//			setVisibility(i);
-//			return;
-//		}
+		// if (!(this.animation instanceof InOutAnimation))
+		// return;
+		// InOutAnimation.Direction localDirection1 = ((InOutAnimation)
+		// this.animation).direction;
+		// InOutAnimation.Direction localDirection2 =
+		// InOutAnimation.Direction.OUT;
+		// if (localDirection1 == localDirection2)
+		// ;
+		// for (int i = 8;; i = 0) {
+		// setVisibility(i);
+		// return;
+		// }
 	}
 
 	protected void onAnimationStart() {
 		super.onAnimationStart();
-//		if (!(this.animation instanceof InOutAnimation))
-//			return;
+		// if (!(this.animation instanceof InOutAnimation))
+		// return;
 		setVisibility(0);
 	}
 
