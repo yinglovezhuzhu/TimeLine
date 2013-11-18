@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <!-- Left -->
+    <RelativeLayout 
+        android:id="@+id/fl_item_time_line_left"
+        android:layout_width="40dip"
+        android:layout_height="match_parent">
+        <View 
+            android:id="@+id/view_item_time_line_left_line"
+            android:layout_width="3dip"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#AAADADAC"/>
+        <ImageView 
+            android:id="@+id/iv_item_time_line_icon"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginTop="8dip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_position" 
+            android:scaleType="center"
+            android:contentDescription="@string/app_name"/>
+        <View 
+            android:id="@+id/view_item_time_line_bottom_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:background="#AAADADAC"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/view_item_time_line_left_line"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    <!-- Top -->
+	    <LinearLayout 
+	        android:id="@+id/ll_item_time_line_top"
+	        android:orientation="horizontal"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dip"
+	        android:layout_marginTop="8dip"
+	        android:gravity="center_vertical">
+		    <TextView 
+		        android:id="@+id/tv_item_time_line_time"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="8dip"
+		        android:textSize="20sp"
+		        android:text="2013年11月01日 18：00"/>
+	    </LinearLayout>
+	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_weight="1"
+	        android:layout_height="0dip"
+	        android:paddingBottom="5dip" 
+	        android:baselineAligned="false">
+	        
+    		<!-- center -->
+    		<FrameLayout 
+    		    android:layout_width="wrap_content"
+    		    android:layout_height="wrap_content"
+    		    android:layout_alignParentLeft="true"
+    		    android:layout_toLeftOf="@+id/ll_item_time_line_right">
+			    <ImageView 
+			        android:id="@+id/iv_item_time_line_center"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:adjustViewBounds="true"
+			        android:scaleType="fitCenter"
+			        android:src="@drawable/pic1" 
+			        android:contentDescription="@string/app_name"/>
+			    <RelativeLayout 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="bottom"
+			        android:paddingLeft="5dip"
+			        android:paddingRight="5dip"
+			        android:background="#88000000">
+			        <TextView 
+			            android:id="@+id/tv_item_time_line_desc"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:layout_toLeftOf="@+id/fl_item_time_line_tag"
+			            android:layout_centerVertical="true"
+			            android:layout_marginRight="8dip"
+			            android:textSize="16sp"
+			            android:singleLine="true"
+			            android:textColor="#FFFFFFFF"
+			            android:text="Tag2222222222222222222222"/>
+			        <FrameLayout 
+			            android:id="@+id/fl_item_time_line_tag"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:layout_centerVertical="true">
+			            
+				        <TextView 
+				            android:id="@+id/tv_item_time_line_tag_name"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_gravity="center_vertical"
+				            android:textSize="16sp"
+				            android:singleLine="true"
+				            android:textColor="#FFFFFFFF"
+				            android:maxLength="4"
+				            android:text="TAG"/>
+				        <ImageView 
+				            android:id="@+id/iv_item_time_line_tag_icon"
+				            android:layout_width="18dip"
+				            android:layout_height="18dip"
+				            android:layout_gravity="center_vertical|right"
+				            android:scaleType="fitCenter"
+				            android:src="@drawable/ic_launcher" 
+				            android:contentDescription="@string/app_name"/>
+			        </FrameLayout>
+			    </RelativeLayout>
+    		</FrameLayout>
+		    
+	        <!-- Right -->
+		    <LinearLayout 
+		        android:id="@+id/ll_item_time_line_right"
+		        android:orientation="vertical"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="5dip"
+		        android:paddingRight="5dip"
+		        android:layout_alignParentRight="true">
+		        <ImageButton 
+		            android:id="@+id/ibtn_item_time_line_btn1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:minWidth="35dip"
+		            android:contentDescription="@string/app_name"
+		            android:background="@drawable/btn_blue_selector"
+		            android:src="@drawable/ic_share"/>
+		        <ImageButton 
+		            android:id="@+id/ibtn_item_time_line_btn2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:minWidth="35dip"
+		            android:layout_marginTop="8dip"
+		            android:contentDescription="@string/app_name"
+		            android:background="@drawable/btn_blue_selector"
+		            android:src="@drawable/ic_share"/>
+		        <ImageButton 
+		            android:id="@+id/ibtn_item_time_line_btn3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:minWidth="35dip"
+		            android:layout_marginTop="8dip"
+		            android:contentDescription="@string/app_name"
+		            android:background="@drawable/btn_blue_selector"
+		            android:src="@drawable/ic_collection"/>
+		    </LinearLayout>
+	    </RelativeLayout>
+    
+    	
+	    <!-- Bottom -->
+	    <View
+	        android:id="@+id/view_item_time_line_bottom"
+	        android:layout_width="match_parent"
+	        android:layout_height="2dip"
+	        android:layout_gravity="bottom"
+	        android:background="#AAADADAC"/>
+    </LinearLayout>
+    
+</LinearLayout>
